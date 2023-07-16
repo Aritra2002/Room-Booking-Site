@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>New User Registration</title>
+		<link rel="stylesheet" href="include/bootstrap.min.css">
+		<center><img src='images/preview-web-banner-hotel-booking-template-design-1605702250.jpg' style='padding-bottom:0px'></center>
+		<style>
+			.bd-placeholder-img{
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-mox-user-select: none;
+			-mox-user-select: none;
+			user-select: none;
+			}
+			@media (min-width: 768px){
+				.bd-placeholder-img-lg{
+					font-size: 3.5rem;
+				}
+			}
+			body{
+				height: 100%;
+			}
+			body{
+				align-items: center;
+				padding-bottom: 40px;
+				background-color: #f5f5f5;
+			}
+			.form-signin{
+				width: 100%;
+				max-width: 330px;
+				padding: 15px;
+				margin: auto;
+			}
+			.form-signin .form-control{
+				position: relative;
+				box-sizing: border-box;
+				hight: auto;
+				padding: 10px;
+				font-size: 16px;
+			}
+			.form-signin .form-control:focus{
+				z-index: 2;
+			}
+			.form-signin input[type='email']{
+				margin-bottom: 1px;
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+			.form-signin input[type='password']{
+				margin-bottom: 10px;
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+			nav .navbar-nav li a{
+				color: white;
+				
+			}
+			.navbar-nav{
+				margin-left: auto;
+				margin-right: auto;
+			}
+			nav{
+				top: auto;
+				
+			}
+			.c{
+				padding-top: 250px;
+				padding-bottom: 100px;
+			}
+		</style>
+	</head>
+	
+	
+	
+	<body class='text-center'>
+		<nav class='navbar navbar-inverse navbar-expand-sm bg-dark'>
+			<div class='container-fluid'>
+				<ul class='navbar-nav nav-pills'>
+					<li class='nav-item'><a class='nav-link' href='index.html'> Home </a></li>
+					<li class='nav-item'><a class='nav-link active' href='userlogin.html'> User </a></li>
+					<li class='nav-item'><a class='nav-link' href='adminlogin.html'> Admin </a></li>
+				</ul>
+			</div>
+		</nav>
+		<form class='form-signin' method="POST" action="insertu.php">
+		<h1 class='h1 mb-3 font-weight-normal'> Register as New User </h1>
+		<label for='inputName' class='sr-only'>User Name</label>
+		<input type='name' id='inputName' name="username" class='form-control' placeholder='User Name' maxlength='20' required autofocus/>
+		<label for='inputEmail' class='sr-only'>Email Address</label>
+		<input type='email' id='inputEmail' name="email" class='form-control' placeholder='Email Address' maxlength='30' required autofocus/>
+		<label for='inputPhno' class='sr-only'>Phone Number</label>
+		<input type='phno' id='inputPhno' name="phno" class='form-control' placeholder='Phone Number' maxlength='10' required autofocus/>
+		<label for='inputPhno' class='sr-only'>Password</label>
+		<input type='password' id='inputPassword' name="pwd" class='form-control' placeholder='Password' maxlength='16' required/>
+		<button class='btn btn-lg btn-primary btn-block' type='submit'>Register</button>
+	</form>
+	
+		<!--<center>
+		<h1>Register As New User</h1>
+		<form method="POST" action="insertu.php">
+		User Name: <input type="text" name="username" maxlength="20" required/><br><br>
+		Email: <input type="text" name="email" maxlength='30'required/><br><br>
+		Phone Number: <input type="text" name="phno" maxlength='10'/><br><br>
+		Password: <input type="password" name="pwd" maxlength='16' required/><br><br>
+		<button type="submit" value="submit"> Submit </button><br><br><br>
+		</form>
+		</center>-->
+		
+	</body>
+
+</html>
